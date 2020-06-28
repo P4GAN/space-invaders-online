@@ -1,0 +1,92 @@
+
+
+body, html {
+  background-color: rgb(50, 50, 50);
+  height: 100%;
+  color: white;
+}
+
+#gameCanvas {
+    border: 5px solid black;
+    float: left;
+}
+
+#sidebar {
+    border: 5px solid black;
+    float: left;
+    height: 600px;
+    width: 200px;
+}
+
+#messages {
+  overflow: scroll;
+  height: 150px;
+  border: 1px solid black;
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0;
+}
+
+#messages li { 
+  padding: 5px 10px; 
+}
+
+#messageForm input { 
+  border: 0; 
+  padding: 10px; 
+  width: 120px; 
+  margin-right: 0.5%; 
+}
+#send { 
+  width: 30px; 
+  background-color: darkcyan; 
+  border: none; 
+  padding: 10px; 
+  color: white;
+  display: inline;
+}
+      
+#send:hover {
+  background-color: blue;
+}
+
+#playerScores {
+  overflow: scroll;
+  height: 150px;
+  border: 1px solid black;
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0;
+}
+
+#playerScores li { 
+  padding: 5px 10px; 
+}
+
+
+#enterName input { 
+  border: 0; 
+  padding: 10px; 
+  width: 120px; 
+  margin-right: 0.5%; 
+}
+
+#joinGame {
+  width: 20px; 
+  background-color: darkcyan; 
+  border: none; 
+  padding: 10px; 
+  color: white;
+  display: inline;
+}
+
+#joinGame:hover {
+  background-color: blue;
+}
+
+#startGame {
+  border: 1px solid black;
+}
+#startGame:hover {
+  background-color: blue;
+}

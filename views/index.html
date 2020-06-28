@@ -1,0 +1,65 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>Space Invaders!</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+
+
+  </head>
+  <body>
+    <canvas id="gameCanvas" height="600px" width="800px">
+
+    </canvas>
+
+    <div id="sidebar">
+
+
+
+        <form id="enterName" onsubmit="return false;">
+            <input type="text" id="name" placeholder="Enter Name:"/>
+            <div onclick="joinGame()" id="joinGame">
+              Join
+            </div>
+        </form>
+
+        <br>
+        <br>
+        <div>
+          Player Scores:
+          <ul id="playerScores"></ul>
+        </div>
+
+        <br>
+
+        Messages:
+      
+        <ul id="messages"></ul>
+        <form id="messageForm" onsubmit="return false;">
+            
+            <input type="text" id="message" placeholder="Message: "/>        
+        <div onclick="sendMessage()" id="send">
+          Send
+        </div>
+        </form>
+        <br>
+        <br>
+        <div id="startGame" onclick="startGame()">
+          Click to Start Game
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/mainGame.js"></script>
+    
+  </body>
+</html>
