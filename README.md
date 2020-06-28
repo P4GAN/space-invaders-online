@@ -1,5 +1,5 @@
 # space-invaders-online
-My year 10 IST project, where I made online multiplayer space invaders
+My year 10 IST project, where I made online multiplayer space invaders, I made this repo mainly for storage purposes
 
 I used node.js, express and socket.io, and hosted the game on Glitch
 
